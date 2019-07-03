@@ -14,6 +14,7 @@ import { ConfirmDialogModule} from 'primeng/confirmdialog';
 import { RouterModule } from '@angular/router';
 import {DropdownModule} from 'primeng/dropdown';
 import {InputMaskModule} from 'primeng/inputmask';
+import {RadioButtonModule} from 'primeng/radiobutton';
 
 @NgModule({
   declarations: [VgtrabalhoCadastroComponent, VgtrabalhoPesquisaComponent],
@@ -28,7 +29,8 @@ import {InputMaskModule} from 'primeng/inputmask';
     FormsModule,
     InputMaskModule,
     ConfirmDialogModule,
-    RouterModule
+    RouterModule,
+    RadioButtonModule
   ],
   exports: [
     VgtrabalhoPesquisaComponent,

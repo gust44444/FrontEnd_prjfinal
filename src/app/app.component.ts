@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ProcuraFunc';
+  title = 'Cadastro de Vagas de Trabalho';
 }

@@ -13,6 +13,10 @@ export class VgtrabalhoPesquisaComponent implements OnInit {
 
   busca: string;
 
+  empresas = [];
+
+  selectedValue:string;
+
   constructor(
     private service:VgtrabalhoService,
     private msg: MessageService,

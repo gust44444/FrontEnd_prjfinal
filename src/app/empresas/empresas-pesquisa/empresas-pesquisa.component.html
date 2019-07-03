@@ -26,6 +26,7 @@
                   <tr>
                     <th class="col-id-header">Id</th>
                     <th>Empresas</th>
+                    <th>Cidade</th>
                     <th class="col-acoes"></th>
                   </tr>
                </ng-template>
@@ -34,6 +35,7 @@
                   <tr>
                     <td class="col-id">{{emp.id}}</td>
                     <td>{{emp.nome}}</td>
+                    <td>{{emp.cidade}}</td>
                     <td class="col-acoes">
                         <button pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top" showDelay="1000"  class="ui-button-info" [routerLink]="['/empresas', emp.id]"></button>
                         <button pButton icon="pi pi-trash"  pTooltip="Excluir" tooltipPosition="top" showDelay="1000" class="ui-button-danger" (click)="confirmarExclusao(emp)"></button>

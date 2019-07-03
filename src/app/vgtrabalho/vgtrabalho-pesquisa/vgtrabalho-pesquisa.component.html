@@ -11,7 +11,9 @@
         </h1>
       </div>
       <div class="ui-g-12 ui-fluid">
-          <label>Pesquisa</label>
+          <label>Filtro:</label>
+          <p-radioButton name="filtrar" value="cargo" label="Cargo" [(ngModel)]="selectedValue"> </p-radioButton>
+          <p-radioButton name="filtrar" value="empresa" label="Empresa" [(ngModel)]="selectedValue"></p-radioButton>
           <input pInputText type="text" name="descricao" [(ngModel)]="busca">
       </div>
       <div class="ui-g-12">
@@ -26,7 +28,8 @@
                   <tr>
                     <th class="col-id-header">Id</th>
                     <th>Vagas de Trabalho</th>
-                    <th class="col-acoes"></th>
+                    <th>Empresas</th>
+                   <th class="col-acoes"></th>
                   </tr>
                </ng-template>
 
@@ -34,6 +37,7 @@
                   <tr>
                     <td class="col-id">{{vgt.id}}</td>
                     <td>{{vgt.nomedcargo}}</td>
+                    <td>{{vgt.empresas}}</td>
                     <td class="col-acoes">
                         <button pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top" showDelay="1000"  class="ui-button-info" [routerLink]="['/vgtrabalho', vgt.id]"></button>
                         <button pButton icon="pi pi-trash"  pTooltip="Excluir" tooltipPosition="top" showDelay="1000" class="ui-button-danger" (click)="confirmarExclusao(vgt)"></button>
